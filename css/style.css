@@ -1,0 +1,395 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html img {
+  max-width: 100%;
+}
+
+html body {
+  font-family: "Yu Gothic Medium" ,"游ゴシック Medium" ,YuGothic ,"游ゴシック体" ,"ヒラギノ角ゴ Pro W3" ,sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+html body .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+html body .page-title {
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+html body .button {
+  display: inline-block;
+  font-size: 1.4rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 42px;
+  padding: 18px 32px;
+}
+
+html body .button:hover {
+  background: #0090aa;
+}
+
+html body .top-image {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+html body .top-image .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .top-image .page-header h1 a {
+  display: inline-block;
+}
+
+html body .top-image .page-header h1 a .logo {
+  width: 210px;
+  margin-top: 14px;
+}
+
+html body .top-image .page-header nav .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+}
+
+html body .top-image .page-header nav .main-nav li {
+  margin-left: 36px;
+}
+
+html body .top-image .page-header nav .main-nav li a {
+  color: #432;
+}
+
+html body .top-image .page-header nav .main-nav li a:hover {
+  color: #0bd;
+}
+
+html body .top-image .home-content, html body .top-image .news-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+html body .top-image .home-content p, html body .top-image .news-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+html body .top-image .home-content .button, html body .top-image .news-content .button {
+  display: inline-block;
+  font-size: 1.4rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 42px;
+  padding: 18px 32px;
+}
+
+html body .top-image .home-content .button:hover, html body .top-image .news-content .button:hover {
+  background: #0090aa;
+}
+
+html body .news-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .news-contents article {
+  width: 74%;
+}
+
+html body .news-contents article .post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+html body .news-contents article .post-info .post-title {
+  font-family: "Yu Mincho", "YuMincyo", serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+html body .news-contents article .post-info .post-title, html body .news-contents article .post-info .post-category {
+  margin-left: 120px;
+}
+
+html body .news-contents article .post-info .post-date {
+  background: #0bd;
+  border-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.6rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+html body .news-contents article .post-info .post-date span {
+  font-size: 1rem;
+  border-top: 1px rgba(255, 255, 255, 0.5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+html body .news-contents article img {
+  margin-bottom: 20px;
+}
+
+html body .news-contents article p {
+  margin-bottom: 1rem;
+}
+
+html body .news-contents aside {
+  width: 22%;
+}
+
+html body .news-contents aside .sub-title {
+  font-size: 1.4rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #0bd solid;
+  font-weight: normal;
+}
+
+html body .news-contents aside .sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+html body .news-contents aside .sub-menu li {
+  border-bottom: 1px #ddd solid;
+}
+
+html body .news-contents aside .sub-menu a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+
+html body .news-contents aside .sub-menu a:hover {
+  color: #0bd;
+}
+
+html body .news-contents aside p {
+  padding: 12px 10px;
+}
+
+html body footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+
+html body footer p {
+  color: #fff;
+}
+
+html body #home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+}
+
+html body #home .page-title {
+  text-transform: none;
+}
+
+html body #news {
+  background-image: url(../images/news-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+html body #news .news-content {
+  margin-top: 0;
+}
+
+html body #menu {
+  background-image: url(../images/menu-bg.jpg);
+  min-height: 100vh;
+}
+
+html body #menu .menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+
+html body #menu .menu-content .page-title {
+  text-align: center;
+}
+
+html body #menu .menu-content p {
+  font-size: 1.1rem;
+  margin: 10px 0 0;
+}
+
+html body .grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 26px;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+html body .big-box {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+html body .big-box img {
+  height: 94%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html body #contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100%;
+}
+
+html body #contact form div {
+  margin-bottom: 14px;
+}
+
+html body #contact form div label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+html body #contact form div input[type="text"], html body #contact form div input[type="email"], html body #contact form div textarea {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+html body #contact form div input[type="text"], html body #contact form div input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+
+html body #contact form div textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 5rem;
+}
+
+html body #contact form div input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  html body .page-title {
+    font-size: 2.5rem;
+  }
+  html body .page-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  html body .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  html body .main-nav li {
+    margin: 0 20px;
+  }
+  html body .home-content {
+    margin-top: 20%;
+  }
+  html body .news-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body .news-contents article, html body .news-contents aside {
+    width: 100%;
+  }
+  html body #news .page-title {
+    margin-top: 30px;
+  }
+  html body aside {
+    margin-bottom: 30px;
+  }
+  html body .post-info {
+    margin-bottom: 30px;
+  }
+  html body .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  html body .post-date span {
+    font-size: 1.4rem;
+    padding-top: 2px;
+  }
+  html body .post-title {
+    font-size: 1.4rem;
+  }
+  html body .post-category {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  html body .post-title, html body .post-category {
+    margin-left: 80px;
+  }
+  html body .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  html body .big-box img {
+    height: auto;
+  }
+  html body #contact .page-title {
+    margin-top: 40px;
+  }
+  html body input[type="text"], html body input[type="email"], html body textarea {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

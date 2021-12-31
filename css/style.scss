@@ -1,0 +1,352 @@
+@charset "UFT-8";
+@import "includ.scss";
+html {
+  // ユーザー指定した文字サイズを正しく反映させる
+  font-size: 100%;
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  // 共通
+  body {
+    // フォント指定
+    font-family: "Yu Gothic Medium" ,"游ゴシック Medium" ,YuGothic ,"游ゴシック体" ,"ヒラギノ角ゴ Pro W3" ,sans-serif;
+    // 行の高さ指定
+    line-height: 1.7;
+    // 文字色のベースを指定
+    color: #432;
+    .wrapper {
+      max-width: $wra-max_width;
+      margin: 0 auto;
+      padding: 0 $wra-padding_side;
+    }
+    .page-title {
+      font-size: 5rem;
+      font-family: 'Philosopher', serif;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    .button {
+      display: inline-block;
+      font-size: 1.4rem;
+      background: $botton_background;
+      color: $botton_color;
+      border-radius: 5px;
+      margin-top: 42px;
+      padding: 18px 32px;
+      &:hover {
+        background: $botton_background-hover;
+      }
+    }
+
+
+    .top-image {
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          a {
+            display: inline-block;
+            .logo {
+              width: 210px;
+              margin-top: 14px;
+            }
+          }  
+        }
+        nav {
+          .main-nav {
+            display: flex;
+            list-style: none;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin-top: 34px;
+            li {
+              margin-left: 36px;
+              a {
+                color: $font_color;
+                &:hover {
+                  color: $font_color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+      .home-content, .news-content {
+        text-align: center;
+        margin-top: 10%;
+        p {
+          font-size: 1.2rem;
+          margin-top: 10px;
+        }
+        .button {
+          display: inline-block;
+          font-size: 1.4rem;
+          background: $botton_background;
+          color: $botton_color;
+          border-radius: 5px;
+          margin-top: 42px;
+          padding: 18px 32px;
+          &:hover {
+            background: $botton_background-hover;
+          }
+        }
+      }
+    }
+
+    .news-contents {
+      display: flex;
+      justify-content: space-between;
+      article {
+        width: 74%;
+        .post-info {
+          position: relative;
+          padding-top: 4px;
+          margin-bottom: 40px;
+          .post-title {
+            font-family: "Yu Mincho", "YuMincyo", serif;
+            font-size: 2rem;
+            font-weight: normal;
+          }
+          .post-title, .post-category {
+            margin-left: 120px;
+          }
+          .post-date {
+            background: $botton_background;
+            border-radius: 50%;
+            color: $botton_color;
+            width: 100px;
+            height: 100px;
+            font-size: 1.6rem;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            padding-top: 10px;
+            span {
+              font-size: 1rem;
+              border-top: 1px rgba($color: $botton_color, $alpha: 0.5) solid;
+              padding-top: 6px;
+              display: block;
+              width: 60%;
+              margin: 0 auto;
+            }
+          }
+        }
+        img{
+          margin-bottom: 20px;
+        }
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      aside {
+        width: 22%;
+        .sub-title {
+          font-size: 1.4rem;
+          padding: 0 8px 8px;
+          border-bottom: 2px $botton_background solid;
+          font-weight: normal;
+        }
+        .sub-menu {
+          margin-bottom: 60px;
+          list-style: none;
+          li {
+            border-bottom: 1px #ddd solid;
+          }
+          a {
+            color: $font_color;
+            padding: 10px;
+            display: block;
+            &:hover {
+              color: $font_color-hover;
+            }
+          }
+        }
+        p {
+          padding: 12px 10px;
+        }
+      }
+    }
+
+    footer {
+      background: $footer_background;
+      text-align: center;
+      padding: 26px 0;
+      margin-top: 50px;
+      p {
+        color: $footer_color;
+      }
+    }
+
+    // home
+    #home {
+      background-image: url(../images/main-bg.jpg);
+      min-height: 100vh;
+      .page-title {
+        text-transform: none;
+      }
+    }
+
+    // news
+    #news {
+      background-image: url(../images/news-bg.jpg);
+      height: 270px;
+      margin-bottom: 40px;
+      .news-content {
+        margin-top: 0;
+      }
+    }
+
+    // menu
+    #menu {
+      background-image: url(../images/menu-bg.jpg);
+      min-height: 100vh;
+      .menu-content {
+        max-width: 560px;
+        margin-top: 10%;
+        .page-title {
+          text-align: center;
+        }
+        p {
+          font-size: 1.1rem;
+          margin: 10px 0 0;
+        }
+      }
+    }
+    .grid {
+      display: grid;
+      gap: 26px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-top: 6%;
+      margin-bottom: 50px;
+    }
+    .big-box {
+      grid-column: 1/3;
+      grid-row: 1/3;
+      img {
+        height: 94%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    // contact
+    #contact {
+      background-image: url(../images/contact-bg.jpg);
+      min-height: 100%;
+      form div {
+        margin-bottom: 14px;
+        label {
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          display: block;
+        }
+        input[type="text"],input[type="email"],textarea {
+          background: rgba($color: #fff, $alpha: 0.5);
+        }
+        input[type="text"],input[type="email"] {
+          width: 100%;
+          max-width: 240px;
+        }
+        textarea {
+          width: 100%;
+          max-width: 480px;
+          height: 5rem;
+        }
+        input[type="submit"] {
+          border: none;
+          cursor: pointer;
+          line-height: 1;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page-title {
+        font-size: 2.5rem;
+      }
+      // ヘッダー
+      .page-header {
+        flex-direction: column;
+        align-items: center;
+      }
+      .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+        li {
+          margin: 0 20px;
+        }
+      }
+  
+      // ホーム
+      .home-content {
+        margin-top: 20%;
+      }
+  
+      // ニュース
+      .news-contents {
+        flex-direction: column;
+        article, aside {
+          width: 100%;
+        }
+      }
+      #news .page-title {
+        margin-top: 30px;
+      }
+      aside {
+        margin-bottom: 30px;
+      }
+      .post-info {
+        margin-bottom: 30px;
+      }
+      .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+        span {
+          font-size: 1.4rem;
+          padding-top: 2px;
+        }
+      }
+      .post-title {
+        font-size: 1.4rem;
+      }
+      .post-category {
+        font-size: 0.8rem;
+        margin-top: 10px;
+      }
+      .post-title, .post-category {
+        margin-left: 80px;
+      }
+      .big-box {
+        grid-column: auto;
+        grid-row: auto;
+        img {
+          height: auto;
+        }
+      }
+      // contact
+      #contact .page-title {
+        margin-top: 40px;
+      }
+
+      // form
+      input[type="text"],input[type="email"],textarea {
+        max-width: 100%;
+      }
+    }
+
+  
+  }
+}
+
+
+
+
+
